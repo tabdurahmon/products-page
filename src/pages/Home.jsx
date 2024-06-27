@@ -20,6 +20,7 @@ function Home() {
           <div key={product.id} className="product-card">
             <Link to={`/product/${product.id}`}>
               <h3>{product.title}</h3>
+              <img src={product.thumbnail} alt={product.title} />
               <p>{product.price}$</p>
             </Link>
           </div>
